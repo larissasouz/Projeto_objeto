@@ -130,6 +130,7 @@ public class Caneta {
 
         try {
            System.out.println("Gerando CSV");
+
 ////lê e acrescenta no csv
             Scanner sc = new Scanner(new File("C:\\Programação\\LP1\\LP1\\canetas.csv"));
             List<String> linhas = new ArrayList<>();

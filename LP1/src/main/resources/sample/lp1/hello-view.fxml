@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lp1.HelloController">
+<AnchorPane fx:id="visualizar" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lp1.HelloController">
    <children>
       <Button fx:id="cadastro" layoutX="103.0" layoutY="293.0" mnemonicParsing="false" onAction="#registrar" text="Concluido" />
       <TextField fx:id="cor" layoutX="92.0" layoutY="93.0" />
@@ -26,5 +26,7 @@
       <Button fx:id="escreve" layoutX="468.0" layoutY="293.0" mnemonicParsing="false" onAction="#escreve" text="Escrever" />
       <TextField fx:id="texto" layoutX="306.0" layoutY="187.0" prefHeight="131.0" prefWidth="149.0" />
       <ScrollBar layoutX="441.0" layoutY="189.0" orientation="VERTICAL" prefHeight="131.0" prefWidth="14.0" />
+      <Button fx:id="ver" layoutX="306.0" layoutY="443.0" mnemonicParsing="false" onAction="#mostrar" text="Mostrar" />
+      <TextField fx:id="escolha" layoutX="306.0" layoutY="407.0" />
    </children>
 </AnchorPane>
