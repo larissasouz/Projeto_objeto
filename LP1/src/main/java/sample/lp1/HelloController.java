@@ -59,8 +59,8 @@ public class HelloController {
             alert.setContentText(mytext);
             alert.showAndWait();
         } else {
-            alert.setContentText(myDict.get(escolha.getText()).getCor()
-                    + "//" + myDict.get(escolha.getText()).getMarca() + "//"
+            alert.setContentText( "Cor: " + myDict.get(escolha.getText()).getCor()
+                    + " Marca: " + myDict.get(escolha.getText()).getMarca() + " Ponta: "
                     + myDict.get(escolha.getText()).getPonta());
             alert.showAndWait();
         }
