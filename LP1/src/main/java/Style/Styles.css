@@ -1,0 +1,21 @@
+.button {
+    -fx-font-veight: bold;
+    -fx-background-color: #6F248D  ;
+    -fx-font-size:13;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+}
+
+.button:hover {
+    -fx-font-veight: bold;
+    -fx-background-color: #A92BDC   ;
+    -fx-font-size: 13;
+    -fx-text-fill: white ;
+}
+
+.button: pressed {
+    -fx-font-veight: bold;
+    -fx-background-color: #C033F9  ;
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+}

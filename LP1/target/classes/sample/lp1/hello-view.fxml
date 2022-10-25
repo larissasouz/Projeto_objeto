@@ -1,32 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="visualizar" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lp1.HelloController">
+<AnchorPane fx:id="visualizar" minHeight="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lp1.HelloController">
    <children>
-      <Button fx:id="cadastro" layoutX="103.0" layoutY="293.0" mnemonicParsing="false" onAction="#registrar" text="Concluido" />
-      <TextField fx:id="cor" layoutX="92.0" layoutY="93.0" />
-      <Label layoutX="44.0" layoutY="97.0" text="Cor" />
-      <Label layoutX="40.0" layoutY="140.0" text="Marca" />
-      <TextField fx:id="marca" layoutX="92.0" layoutY="136.0" />
-      <Label layoutX="38.0" layoutY="191.0" text="Ponta" />
-      <TextField fx:id="ponta" layoutX="92.0" layoutY="187.0" />
-      <Label layoutX="243.0" layoutY="20.0" text="CANETA">
+      <Button fx:id="cadastro" layoutX="565.0" layoutY="226.0" mnemonicParsing="false" onAction="#registrar" stylesheets="@../../../java/Style/Styles.css" text="Concluido" />
+      <TextField fx:id="cor" layoutX="92.0" layoutY="148.0" promptText="Rosa" />
+      <Label layoutX="60.0" layoutY="152.0" text="Cor" textFill="#3c0217" />
+      <Label layoutX="290.0" layoutY="152.0" text="Marca" textFill="#3c0217" />
+      <TextField fx:id="marca" layoutX="330.0" layoutY="148.0" promptText="Bic" />
+      <Label layoutX="544.0" layoutY="152.0" text="Ponta" textFill="#3c0217" />
+      <TextField fx:id="ponta" layoutX="588.0" layoutY="148.0" promptText="0.5" />
+      <Label layoutX="293.0" layoutY="48.0" text="CANETA" textFill="#aa0742">
          <font>
-            <Font name="Britannic Bold" size="29.0" />
+            <Font name="Britannic Bold" size="47.0" />
          </font>
       </Label>
-      <Button fx:id="tampa" layoutX="312.0" layoutY="136.0" mnemonicParsing="false" onAction="#tampa" text="Tampar" />
-      <Button fx:id="destampa" layoutX="381.0" layoutY="136.0" mnemonicParsing="false" onAction="#destampa" text="Destampar" />
-      <Button fx:id="esvazia" layoutX="469.0" layoutY="136.0" mnemonicParsing="false" onAction="#esvazia" text="Esvaziar" />
-      <Line endX="-66.0" endY="1062.3134765625" layoutX="357.0" layoutY="-745.0" opacity="0.26" startX="-66.0" startY="813.1063842773438" AnchorPane.bottomAnchor="69.1865234375" AnchorPane.topAnchor="67.60638427734375" />
-      <Button fx:id="escreve" layoutX="468.0" layoutY="293.0" mnemonicParsing="false" onAction="#escreve" text="Escrever" />
-      <TextField fx:id="texto" layoutX="306.0" layoutY="187.0" prefHeight="131.0" prefWidth="149.0" />
-      <ScrollBar layoutX="441.0" layoutY="189.0" orientation="VERTICAL" prefHeight="131.0" prefWidth="14.0" />
-      <Button fx:id="ver" layoutX="306.0" layoutY="443.0" mnemonicParsing="false" onAction="#mostrar" text="Mostrar" />
-      <TextField fx:id="escolha" layoutX="306.0" layoutY="407.0" />
+      <Button fx:id="tampa" layoutX="292.0" layoutY="233.0" mnemonicParsing="false" onAction="#tampa" stylesheets="Styles2.css" text="Tampar" />
+      <Button fx:id="destampa" layoutX="290.0" layoutY="316.0" mnemonicParsing="false" onAction="#destampa" stylesheets="@../../../java/Style/Styles2.css" text="Destampar" />
+      <Button fx:id="esvazia" layoutX="291.0" layoutY="278.0" mnemonicParsing="false" onAction="#esvazia" stylesheets="@../../../java/Style/Styles2.css" text="Esvaziar" />
+      <Line endX="118.0" endY="1064.6708984375" layoutX="597.0" layoutY="-682.0" opacity="0.26" startX="-490.0" startY="1064.6708984375" AnchorPane.bottomAnchor="336.8291015625" AnchorPane.topAnchor="382.1708984375" />
+      <Button fx:id="escreve" layoutX="154.0" layoutY="316.0" mnemonicParsing="false" onAction="#escreve" stylesheets="@../../../java/Style/Styles2.css" text="Escrever" />
+      <TextField fx:id="texto" layoutX="92.0" layoutY="239.0" prefHeight="77.0" prefWidth="123.0" promptText="Insira seu texto " />
+      <ScrollBar layoutX="202.0" layoutY="239.0" orientation="VERTICAL" prefHeight="77.0" prefWidth="14.0" />
+      <Button fx:id="ver" layoutX="340.0" layoutY="436.0" mnemonicParsing="false" onAction="#mostrar" stylesheets="@../../../java/Style/Styles.css" text="Mostrar" />
+      <TextField fx:id="escolha" layoutX="176.0" layoutY="437.0" promptText="c1" />
+      <Label layoutX="176.0" layoutY="201.0" text="O que deseja fazer?" textFill="#3c0217">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="561.0" layoutY="201.0" text="Finalize aqui" textFill="#3c0217">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="404.0" text="Insira a caneta desejada" textFill="#3c0217">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
