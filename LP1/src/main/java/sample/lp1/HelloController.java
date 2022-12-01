@@ -1,5 +1,6 @@
 package sample.lp1;
 
+import AcessoDAO.CanetaDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -35,14 +36,15 @@ public class HelloController {
     HashMap<String, Caneta> myDict = new HashMap<String, Caneta>();
 
     //registra as informações
-    public void registrar(ActionEvent actionEvent) {
+    public void registrar(ActionEvent actionEvent) throws Exception {
         Caneta  caneta = new Caneta(cor.getText(), marca.getText(), ponta.getText(), true);
         caneta.status();
         setCaneta(caneta);
         contador = contador + 1;
         guardar(caneta, ("c" + contador));
         myDict.put(("c" + contador), caneta);
-        caneta.criandocsv(caneta.getCor(), caneta.getMarca(), caneta.getPonta(), caneta.isTampa(), caneta.isTinta());
+        CanetaDAO inserir = new CanetaDAO();
+        inserir.canetanova(caneta);
     }
 
     public void mostrar(ActionEvent actionEvent) {

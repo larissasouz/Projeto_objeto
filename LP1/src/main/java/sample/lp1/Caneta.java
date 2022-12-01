@@ -12,9 +12,9 @@ import java.util.Scanner;
 public class Caneta {
 
     // criando atributos
-    private String cor;
-    private String marca;
-    private String ponta;
+    private static String cor;
+    private static String marca;
+    private static String ponta;
     private boolean tampa;
     private boolean tinta;
 
